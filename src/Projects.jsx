@@ -1,13 +1,13 @@
 export default function Projects({ sectionRef }) {
   const projectData = [
     {
-      title: 'QuantVision',
+      title: 'Backtest Dashboard',
       description:
         'A full-stack dashboard for backtesting simple trading strategies on real stock data, built to learn how strategies are tested and evaluated.',
       tags: ['React', 'FastAPI', 'Python', 'Recharts'],
-      image: '/quantvision-preview.png',
-      code: 'https://github.com/ksshubhan/quantvision',
-      demo: 'https://quantvision.vercel.app',
+      image: '/backtest-dashboard-preview.png',
+      code: 'https://github.com/ksshubhan/backtest-dashboard',
+      demo: 'https://backtest-dashboard-sshubhan.vercel.app',
       status: 'complete',
     },
     {
