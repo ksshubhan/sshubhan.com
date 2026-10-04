@@ -64,7 +64,7 @@ export default function Contact({ sectionRef }) {
           <div className="flex flex-col items-center text-center">
             <Github className="w-9 h-9 text-black dark:text-white mb-2" />
             <p className="font-semibold text-black dark:text-white text-lg mb-1">GitHub</p>
-            <p className="text-base text-gray-500 dark:text-gray-400">github.com/sshubhan</p>
+            <p className="text-base text-gray-500 dark:text-gray-400">github.com/ksshubhan</p>
           </div>
         </div>
       </div>
