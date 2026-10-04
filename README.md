@@ -29,6 +29,16 @@ My personal portfolio site: a single-page React app that presents my background,
 - **Scroll tracking that follows the navbar's real height.** The navbar measures its own height with a `ResizeObserver` and feeds it to the scroll-spy offset. The active section stays accurate when the navbar wraps or the mobile viewport resizes.
 - **Vite and Tailwind v4 instead of Create React App.** CRA is no longer maintained. Vite gives fast hot reloading and small production builds, and Tailwind v4's Vite plugin removes the separate PostCSS setup.
 
+## What I learned
+
+- Moving from plain HTML to React gave me much more control over the site's structure, such as splitting it into a component per section and using `useState` and `useEffect` to build the mobile menu, theme toggle and expandable experience cards.
+- Learned to return cleanup functions from `useEffect`, so listeners and observers are removed when they're no longer needed, such as the resize listener each orbiting icon uses to detect mobile screens.
+- Learned to use `useCallback` to stop effects from re-running on every render, which keeps the navbar highlight from snapping back to "Home" when the theme changes or the mobile menu opens.
+- Fixed a bug where the orbiting icons flashed and stayed visible instead of fading away, by stopping the animation loop on hover and restarting it cleanly afterwards.
+- Making the site work on phones was a challenge, especially the navbar, which needed its own collapsible menu on small screens.
+- Deployed the site with Vercel, which was my first time working with DNS.
+- Spent a lot of time reworking the design because I didn't plan enough at the start. Next time I'd settle the layout and animations before writing any code.
+
 ## Running it locally
 
 You need Node.js 20.19 or later (required by Vite 7).
