@@ -1,12 +1,65 @@
-# React + Vite
+# sshubhan.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio site: a single-page React app that presents my background, skills, projects and experience, with a downloadable CV.
 
-Currently, two official plugins are available:
+**Live site: [sshubhan.com](https://sshubhan.com)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack
 
-## Expanding the ESLint configuration
+- **Framework:** React 19, built with Vite 7
+- **Styling:** Tailwind CSS v4 (through the official Vite plugin)
+- **Animation:** Framer Motion
+- **Icons:** Lucide and React Icons
+- **Navigation:** `@makotot/ghostui` Scrollspy for tracking the active section
+- **Tooling:** ESLint 9 with the React Hooks and React Refresh plugins
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- One scrolling page with six sections: Home, About, Skills, Projects, Experience and Contact
+- A sticky navbar whose highlight pill slides to the section currently on screen
+- A light/dark theme toggle that remembers the visitor's choice
+- A collapsible menu for mobile screens
+- Animated icons on the landing section that orbit, bob and fade, and that scale down on small screens
+- Project cards linking to each project's code and live demo
+
+## Design decisions
+
+- **Theme set before React loads.** A small inline script in `index.html` reads the saved theme from `localStorage` and applies it to `<html>` before the app renders. This avoids the flash of the wrong theme that happens if the theme is applied only after React mounts.
+- **One source of truth for the theme.** The navbar writes the theme to a `data-theme` attribute on `<html>`. Components that style themselves in JavaScript, such as the orbiting icons, watch that attribute with a `MutationObserver` instead of passing theme state through props.
+- **Scroll tracking that follows the navbar's real height.** The navbar measures its own height with a `ResizeObserver` and feeds it to the scroll-spy offset. The active section stays accurate when the navbar wraps or the mobile viewport resizes.
+- **Vite and Tailwind v4 instead of Create React App.** CRA is no longer maintained. Vite gives fast hot reloading and small production builds, and Tailwind v4's Vite plugin removes the separate PostCSS setup.
+
+## Running it locally
+
+You need Node.js 20.19 or later (required by Vite 7).
+
+```bash
+git clone https://github.com/ksshubhan/sshubhan.com.git
+cd sshubhan.com
+npm install
+npm run dev        # starts a dev server at http://localhost:5173
+```
+
+Other scripts:
+
+| Command | What it does |
+| --- | --- |
+| `npm run build` | Builds the production site into `dist/` |
+| `npm run preview` | Serves the production build locally |
+| `npm run lint` | Runs ESLint |
+
+## Project structure
+
+```
+src/
+├── App.jsx           # Lays out the sections and holds their refs
+├── Navbar.jsx        # Scroll-spy navigation, theme toggle, mobile menu, CV link
+├── Home.jsx          # Landing section with the animated icons
+├── About.jsx
+├── Skills.jsx
+├── Projects.jsx      # Project data and cards
+├── Experience.jsx
+├── Contact.jsx
+├── OrbitIcon.jsx     # Icon placed on a circle that fades and bobs in a loop
+└── FloatingIcon.jsx  # Simple bobbing icon bubble
+```
