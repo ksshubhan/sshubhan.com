@@ -34,7 +34,7 @@ export default function About({ sectionRef }) {
               {
                 icon: <FaUserGraduate className="text-white text-3xl" />,
                 title: "Bio",
-                text: "First-year Computer Science student at the University of Manchester. Passionate about full-stack development, fintech, and quantitative trading.",
+                text: "Third-year Computer Science student at the University of Manchester. Passionate about full-stack development, fintech, and quantitative trading.",
               },
               {
                 icon: <FaEnvelope className="text-white text-3xl" />,

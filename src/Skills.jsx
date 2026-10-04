@@ -140,7 +140,7 @@ export default function Skills({ sectionRef }) {
             <>
               <SkillCard title="Dev Tools" icon={<FaToolbox />} items={['VS Code', 'Git', 'GitHub']} />
               <SkillCard title="Design Tools" icon={<FaLightbulb />} items={['Canva']} />
-              <SkillCard title="Testing & Deployment" icon={<FaCogs />} items={['Netlify']} />
+              <SkillCard title="Testing & Deployment" icon={<FaCogs />} items={['Vercel']} />
             </>
           )}
         </div>
