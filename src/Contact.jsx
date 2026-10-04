@@ -82,7 +82,7 @@ export default function Contact({ sectionRef }) {
           {/* Right side: icons */}
           <div className="flex gap-4 justify-center sm:justify-start text-gray-500 dark:text-gray-300">
             <a
-              href="https://github.com/sshubhan"
+              href="https://github.com/ksshubhan"
               className="hover:text-gray-800 dark:hover:text-gray-50 transition-colors"
               aria-label="GitHub"
             >
