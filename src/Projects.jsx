@@ -6,7 +6,7 @@ export default function Projects({ sectionRef }) {
         'An interactive quant strategy dashboard built to visualise algorithmic trading performance through dynamic equity curves, Sharpe ratios and backtest metrics.',
       tags: ['React', 'FastAPI', 'Python', 'Recharts'],
       image: '/quantvision-preview.png',
-      code: 'https://github.com/ksshubhan/quantvision-frontend',
+      code: 'https://github.com/ksshubhan/quantvision',
       demo: 'https://quantvision.vercel.app',
       status: 'complete',
     },
