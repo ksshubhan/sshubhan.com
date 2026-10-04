@@ -3,7 +3,7 @@ export default function Projects({ sectionRef }) {
     {
       title: 'QuantVision',
       description:
-        'An interactive quant strategy dashboard built to visualise algorithmic trading performance through dynamic equity curves, Sharpe ratios and backtest metrics.',
+        'A full-stack dashboard for backtesting simple trading strategies on real stock data, built to learn how strategies are tested and evaluated.',
       tags: ['React', 'FastAPI', 'Python', 'Recharts'],
       image: '/quantvision-preview.png',
       code: 'https://github.com/ksshubhan/quantvision',
