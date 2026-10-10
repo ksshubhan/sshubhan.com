@@ -1,6 +1,6 @@
 // Experience.jsx
 import { useState } from "react";
-import { FaLaptopCode, FaUsers, FaChalkboardTeacher } from "react-icons/fa";
+import { FaChalkboardTeacher, FaTrophy, FaBriefcase } from "react-icons/fa";
 import {
   HiOutlineCalendar,
   HiOutlineLocationMarker,
@@ -11,47 +11,44 @@ import {
 const experienceData = [
   {
     icon: <FaChalkboardTeacher className="text-black text-xl" />,
-    badge: "Volunteering",
-    title: "Fabula Reading Challenge",
-    company: "Local Library",
-    date: "Summer 2022",
-    location: "London, UK",
+    badge: "Teaching",
+    title: "GCSE & A-Level Tutor",
+    company: "Private tutoring",
+    date: "Sep 2025 – Present",
     description:
-      "Volunteered as a tutor supporting young children with reading and STEM skills, strengthening my communication and mentorship abilities.",
+      "Tutor GCSE Maths and AQA Biology, Chemistry and Physics, and A-level Maths, Further Maths, Physics and Computer Science, planning each student's sessions around the topics they're weakest in.",
     bullets: [
-      "Ran weekly reading sessions for children aged 5–10.",
-      "Created engaging STEM mini-activities to support learning.",
-      "Improved communication and mentoring through peer feedback.",
+      "Completed 235+ tutoring sessions.",
+      "Helped a student pass GCSE Maths after three previous unsuccessful attempts.",
+      "Took a student from a grade 3 to a grade 7 in GCSE Computer Science.",
     ],
   },
   {
-    icon: <FaLaptopCode className="text-black text-xl" />,
-    badge: "Technical Support",
-    title: "IT Support Volunteer",
-    company: "Gants Hill Library",
-    date: "2022 – 2023",
-    location: "London, UK",
+    icon: <FaTrophy className="text-black text-xl" />,
+    badge: "Hackathon",
+    title: "PRISM Trading Hackathon: 2nd place overall",
+    company: "StudentHack 2025 · two-person team",
+    date: "April 2025",
     description:
-      "Provided technical assistance to library users, improving my problem-solving and tech support skills in real-world scenarios.",
+      "Built Python bots that read a simulated client's budget, age and sector preferences from a live API and submitted a suitable US-equity portfolio, across five rounds of changing rules.",
     bullets: [
-      "Assisted users with printing, scanning, and device setup.",
-      "Resolved connectivity issues and software problems.",
-      "Built rapport with library staff and patrons through daily support.",
+      "Won round 1 by running parallel copies of a fixed-portfolio bot for throughput.",
+      "Rebuilt the strategy around JSON parsing and volatility-ranked stock selection when the scoring changed.",
+      "Tested mean-variance optimisers in the final round, then shipped a faster diversified heuristic with a budget buffer.",
     ],
   },
   {
-    icon: <FaUsers className="text-black text-xl" />,
-    badge: "Projects",
-    title: "Hackathons & Team Projects",
-    company: "University of Manchester",
-    date: "2023 – Present",
-    location: "Manchester, UK",
+    icon: <FaBriefcase className="text-black text-xl" />,
+    badge: "Work Experience",
+    title: "Virtual Work Experience: Cloud Computing",
+    company: "Capgemini",
+    date: "July 2023",
+    location: "Remote",
     description:
-      "Participated in collaborative coding challenges and team projects that enhanced my teamwork, design thinking, and agile development skills.",
+      "One-week virtual programme on cloud computing, working as front-end developer on an eight-person team project.",
     bullets: [
-      "Developed full-stack apps in 48-hour hackathons.",
-      "Collaborated with designers and PMs using agile tools like Trello.",
-      "Presented projects to judges and peers under time pressure.",
+      "Built the front end of the team's facial recognition web app (Python, Flask).",
+      "Worked in Scrum sprints with the rest of the eight-person team.",
     ],
   },
 ];
@@ -86,8 +83,8 @@ export default function Experience({ sectionRef }) {
             className="pointer-events-none absolute left-0 top-0 h-full w-[2.5px]
                        bg-gray-200 dark:bg-gray-700 transition-colors"
           />
-          {experienceData.map((item, i) => (
-            <ExperienceCard key={i} item={item} />
+          {experienceData.map((item) => (
+            <ExperienceCard key={item.title} item={item} />
           ))}
         </div>
       </div>
@@ -131,10 +128,12 @@ function ExperienceCard({ item }) {
             <HiOutlineCalendar className="text-base" />
             <span>{item.date}</span>
           </div>
-          <div className="flex items-center gap-1">
-            <HiOutlineLocationMarker className="text-base" />
-            <span>{item.location}</span>
-          </div>
+          {item.location && (
+            <div className="flex items-center gap-1">
+              <HiOutlineLocationMarker className="text-base" />
+              <span>{item.location}</span>
+            </div>
+          )}
         </div>
 
         {/* description (fixed) */}
@@ -164,7 +163,7 @@ function ExperienceCard({ item }) {
             ) : (
               <>
                 <HiChevronDown className="w-3 h-3" />
-                + 1 more achievements
+                + {item.bullets.length - 2} more
               </>
             )}
           </p>

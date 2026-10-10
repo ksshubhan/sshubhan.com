@@ -49,7 +49,7 @@ export default function About({ sectionRef }) {
               {
                 icon: <FaBrain className="text-white text-3xl" />,
                 title: "Hobbies",
-                text: "Gym, reading, and exploring finance, languages, and AI automation through data-driven tools.",
+                text: "Gym, reading, and exploring finance and languages.",
               },
               {
                 icon: <FaMapMarkerAlt className="text-white text-3xl" />,
@@ -64,7 +64,7 @@ export default function About({ sectionRef }) {
               {
                 icon: <FaGraduationCap className="text-white text-3xl" />,
                 title: "Education",
-                text: "BSc Computer Science @ University of Manchester (2024–2027). Focused on software development, algorithms, and financial technology.",
+                text: "BSc Computer Science @ University of Manchester (2024–2027). Focused on systems, algorithms, and concurrency.",
               }
              ].map(({ icon, title, text }, i) => (
               <div key={i} className="p-4 rounded-md hover:shadow-lg transition text-left">
