@@ -34,7 +34,7 @@ export default function About({ sectionRef }) {
               {
                 icon: <FaUserGraduate className="text-white text-3xl" />,
                 title: "Bio",
-                text: "Third-year Computer Science student at the University of Manchester. I work on low-latency C++ systems and trading strategies, and I'm targeting Quant Developer roles.",
+                text: "Third-year Computer Science student at the University of Manchester.",
               },
               {
                 icon: <FaEnvelope className="text-white text-3xl" />,
@@ -49,7 +49,7 @@ export default function About({ sectionRef }) {
               {
                 icon: <FaBrain className="text-white text-3xl" />,
                 title: "Hobbies",
-                text: "Gym, reading, and exploring finance, languages, and AI automation through data-driven tools.",
+                text: "Gym, reading, and exploring finance and languages.",
               },
               {
                 icon: <FaMapMarkerAlt className="text-white text-3xl" />,
