@@ -23,11 +23,8 @@ const projectData = [
     description:
       'Generates original GCSE Higher Maths practice papers with mark schemes as print-ready PDFs. Questions come from deterministic, seeded builders, and every answer is derived and checked with SymPy before a question can ship. No model generates the content.',
     tags: ['Python', 'FastAPI', 'SymPy', 'React', 'TypeScript', 'Postgres'],
-    highlight: {
-      value: 'SymPy',
-      label: 'verified answers',
-      sub: 'seeded generate-verify pipeline',
-    },
+    image: '/exampaper-builder.jpg',
+    imageAlt: 'ExamPaper paper builder: tier, paper type, length and topic selection',
     code: 'https://github.com/ksshubhan/exam-paper',
     demo: 'https://exampaper.sshubhan.com',
   },
@@ -65,8 +62,7 @@ function ProjectCard({ project }) {
                  flex flex-col md:flex-row items-center gap-6 p-5 md:p-6
                  hover:shadow-md transition-all duration-300 min-h-[13rem]"
     >
-      {/* Visual: screenshot if there is one, otherwise a headline figure */}
-      {project.image ? (
+      {project.image && (
         <div className="w-full md:w-[40%] h-40 lg:h-44 rounded-xl overflow-hidden flex items-center justify-center">
           <img
             src={project.image}
@@ -76,21 +72,6 @@ function ProjectCard({ project }) {
             }`}
           />
         </div>
-      ) : (
-        project.highlight && (
-          <div
-            className="w-full md:w-[40%] h-40 lg:h-44 rounded-xl flex flex-col items-center justify-center
-                       bg-gray-900 text-white dark:bg-gray-950 border border-gray-800 px-4"
-          >
-            <span className="text-4xl lg:text-5xl font-extrabold tracking-tight">
-              {project.highlight.value}
-            </span>
-            <span className="mt-2 text-sm text-gray-300">{project.highlight.label}</span>
-            {project.highlight.sub && (
-              <span className="mt-1 text-xs text-gray-400">{project.highlight.sub}</span>
-            )}
-          </div>
-        )
       )}
 
       {/* Text */}
