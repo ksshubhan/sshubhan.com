@@ -1,6 +1,6 @@
 // Experience.jsx
 import { useState } from "react";
-import { FaLaptopCode, FaUsers, FaChalkboardTeacher, FaTrophy } from "react-icons/fa";
+import { FaChalkboardTeacher, FaTrophy, FaBriefcase } from "react-icons/fa";
 import {
   HiOutlineCalendar,
   HiOutlineLocationMarker,
@@ -38,47 +38,17 @@ const experienceData = [
     ],
   },
   {
-    icon: <FaUsers className="text-black text-xl" />,
-    badge: "Leadership",
-    title: "Director of Operations",
-    company: "Spectra (Young Enterprise), Colchester Royal Grammar School",
-    date: "Sep 2023 – Apr 2024",
-    location: "Colchester, UK",
+    icon: <FaBriefcase className="text-black text-xl" />,
+    badge: "Work Experience",
+    title: "Virtual Work Experience: Cloud Computing",
+    company: "Capgemini",
+    date: "July 2023",
+    location: "Remote",
     description:
-      "Ran operations for a 14-member student company that produced and sold a GCSE revision guide.",
+      "One-week virtual programme on cloud computing, working as front-end developer on an eight-person team project.",
     bullets: [
-      "Coordinated production of the revision guide across the team.",
-      "Kept delivery on schedule through the Young Enterprise programme.",
-    ],
-  },
-  {
-    icon: <FaLaptopCode className="text-black text-xl" />,
-    badge: "Technical Support",
-    title: "IT Support Volunteer",
-    company: "Gants Hill Library",
-    date: "2022 – 2023",
-    location: "London, UK",
-    description:
-      "Provided technical assistance to library users, improving my problem-solving and tech support skills in real-world scenarios.",
-    bullets: [
-      "Assisted users with printing, scanning, and device setup.",
-      "Resolved connectivity issues and software problems.",
-      "Built rapport with library staff and patrons through daily support.",
-    ],
-  },
-  {
-    icon: <FaChalkboardTeacher className="text-black text-xl" />,
-    badge: "Volunteering",
-    title: "Fabula Reading Challenge",
-    company: "Local Library",
-    date: "Summer 2022",
-    location: "London, UK",
-    description:
-      "Volunteered as a tutor supporting young children with reading and STEM skills, strengthening my communication and mentorship abilities.",
-    bullets: [
-      "Ran weekly reading sessions for children aged 5–10.",
-      "Created engaging STEM mini-activities to support learning.",
-      "Improved communication and mentoring through peer feedback.",
+      "Built the front end of the team's facial recognition web app (Python, Flask).",
+      "Worked in Scrum sprints with the rest of the eight-person team.",
     ],
   },
 ];
