@@ -12,13 +12,13 @@ const experienceData = [
   {
     icon: <FaChalkboardTeacher className="text-black text-xl" />,
     badge: "Teaching",
-    title: "GCSE Tutor",
+    title: "GCSE & A-Level Tutor",
     company: "Private tutoring",
     date: "Sep 2025 – Present",
     description:
-      "Tutor GCSE students in Maths and the AQA sciences, planning each student's revision around the topics they're weakest in.",
+      "Tutor GCSE and A-level students, planning each student's revision around the topics they're weakest in.",
     bullets: [
-      "Cover GCSE Maths and AQA Biology, Chemistry and Physics.",
+      "Cover GCSE Maths and AQA Biology, Chemistry and Physics, plus A-level students.",
       "Keep a red/amber/green topic tracker per student and subject to decide what each session covers.",
       "Make revision resources matched to each student's gaps.",
     ],
