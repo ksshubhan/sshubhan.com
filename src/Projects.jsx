@@ -24,15 +24,6 @@ const projectData = [
     code: 'https://github.com/ksshubhan/prism-trading-hackathon',
   },
   {
-    title: 'Backtest Dashboard',
-    description:
-      'A full-stack dashboard for backtesting simple trading strategies on real stock data, built as an early project to learn how strategies are tested and evaluated.',
-    tags: ['React', 'FastAPI', 'Python', 'pandas', 'Recharts'],
-    image: '/backtest-dashboard-preview.png',
-    code: 'https://github.com/ksshubhan/backtest-dashboard',
-    demo: 'https://backtest-dashboard-sshubhan.vercel.app',
-  },
-  {
     title: 'ExamPaper',
     description:
       'Generates original GCSE Higher Maths practice papers with mark schemes as print-ready PDFs. Questions come from deterministic, seeded builders, and every answer is derived and checked with SymPy before a question can ship. No model generates the content.',
