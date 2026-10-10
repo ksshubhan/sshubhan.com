@@ -45,10 +45,10 @@ const experienceData = [
     date: "July 2023",
     location: "Remote",
     description:
-      "One-week virtual programme on cloud computing, working as front-end developer on an eight-person team project.",
+      "One-week virtual programme on cloud computing, working as front-end developer on a five-person team project.",
     bullets: [
       "Built the front end of the team's facial recognition web app (Python, Flask).",
-      "Worked in Scrum sprints with the rest of the eight-person team.",
+      "Worked in Scrum sprints with the rest of the five-person team.",
     ],
   },
 ];
