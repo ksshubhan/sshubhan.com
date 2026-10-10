@@ -16,7 +16,7 @@ const experienceData = [
     company: "Private tutoring",
     date: "Sep 2025 – Present",
     description:
-      "Tutor GCSE Maths, Biology, Chemistry and Physics (AQA), and A-level Maths, Further Maths, Physics and Computer Science, planning each student's sessions around the topics they're weakest in.",
+      "Tutor GCSE Maths and AQA Biology, Chemistry and Physics, and A-level Maths, Further Maths, Physics and Computer Science, planning each student's sessions around the topics they're weakest in.",
     bullets: [
       "Completed 235+ tutoring sessions.",
       "Helped a student pass GCSE Maths after three previous unsuccessful attempts.",
