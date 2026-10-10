@@ -4,11 +4,9 @@ const projectData = [
     description:
       'A wait-free single-producer/single-consumer ring buffer feeding a market data handler, benchmarked against a tuned mutex + condition variable queue under controlled offered load. Every figure in the write-up names the command and artifact it comes from.',
     tags: ['C++20', 'Lock-free', 'Atomics', 'CMake', 'Benchmarking'],
-    highlight: {
-      value: '125 ns',
-      label: 'p99 handoff latency at 500k msg/s',
-      sub: 'vs 375 ns for the tuned mutex baseline',
-    },
+    image: '/market-data-pipeline-latency.png',
+    imageAlt: 'p99.9 latency against offered load for the SPSC ring buffer and two mutex baselines',
+    imageFit: 'contain',
     code: 'https://github.com/ksshubhan/market-data-pipeline',
   },
   {
@@ -16,11 +14,8 @@ const projectData = [
     description:
       'Two-person team entry in a weekend hackathon where bots built US-equity portfolios for simulated clients through a live API, across five rounds of tightening rules. Strategies moved from a fixed high-throughput portfolio to volatility-ranked selection, cvxpy optimisers and a final diversified heuristic with a budget buffer.',
     tags: ['Python', 'REST API', 'yfinance', 'cvxpy', 'pandas'],
-    highlight: {
-      value: '2nd',
-      label: 'place overall',
-      sub: '1st in round 1 · April 2025',
-    },
+    image: '/prism-leaderboard.jpg',
+    imageAlt: 'PRISM round 1 leaderboard with team jt in first place',
     code: 'https://github.com/ksshubhan/prism-trading-hackathon',
   },
   {
@@ -75,8 +70,10 @@ function ProjectCard({ project }) {
         <div className="w-full md:w-[40%] h-40 lg:h-44 rounded-xl overflow-hidden flex items-center justify-center">
           <img
             src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover rounded-xl transition-transform duration-500 hover:scale-[1.03]"
+            alt={project.imageAlt ?? project.title}
+            className={`w-full h-full rounded-xl transition-transform duration-500 hover:scale-[1.03] ${
+              project.imageFit === 'contain' ? 'object-contain bg-white' : 'object-cover'
+            }`}
           />
         </div>
       ) : (
