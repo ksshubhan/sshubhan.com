@@ -14,7 +14,7 @@ const experienceData = [
     badge: "Teaching",
     title: "GCSE Tutor",
     company: "Private tutoring",
-    date: "Present",
+    date: "Sep 2025 – Present",
     description:
       "Tutor GCSE students in Maths and the AQA sciences, planning each student's revision around the topics they're weakest in.",
     bullets: [
