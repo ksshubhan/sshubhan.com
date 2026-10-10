@@ -18,7 +18,8 @@ const experienceData = [
     description:
       "Tutor GCSE and A-level students, planning each student's revision around the topics they're weakest in.",
     bullets: [
-      "Cover GCSE Maths and AQA Biology, Chemistry and Physics, plus A-level students.",
+      "GCSE: Maths and AQA Biology, Chemistry and Physics.",
+      "A-level: Maths, Further Maths, Physics and Computer Science.",
       "Keep a red/amber/green topic tracker per student and subject to decide what each session covers.",
       "Make revision resources matched to each student's gaps.",
     ],
