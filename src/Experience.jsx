@@ -26,7 +26,7 @@ const experienceData = [
   {
     icon: <FaTrophy className="text-black text-xl" />,
     badge: "Hackathon",
-    title: "PRISM Trading Hackathon: 2nd place overall",
+    title: "PRISM Trading Hackathon: 2nd Place Overall",
     company: "StudentHack 2025 · two-person team",
     date: "April 2025",
     description:
