@@ -11,7 +11,6 @@ import {
   FaSearch,
   FaLightbulb,
   FaMicrochip,
-  FaChartLine,
 } from 'react-icons/fa';
 
 export default function Skills({ sectionRef }) {
@@ -91,17 +90,17 @@ export default function Skills({ sectionRef }) {
               <SkillCard
                 title="Languages"
                 icon={<FaLaptopCode />}
-                items={['C++', 'Python', 'Rust', 'C', 'Java', 'Haskell', 'TypeScript', 'Solidity']}
+                items={['C++', 'Python', 'Java', 'Rust', 'C', 'Haskell', 'TypeScript']}
               />
               <SkillCard
-                title="Systems & Performance"
+                title="Software Engineering"
+                icon={<FaCodeBranch />}
+                items={['React', 'FastAPI', 'Spring Boot', 'Postgres', 'REST APIs', 'Testing']}
+              />
+              <SkillCard
+                title="Systems & Data"
                 icon={<FaMicrochip />}
-                items={['C++20', 'Lock-free queues', 'Atomics', 'Concurrency', 'Latency benchmarking', 'CMake']}
-              />
-              <SkillCard
-                title="Quant & Data"
-                icon={<FaChartLine />}
-                items={['Backtesting', 'pandas', 'NumPy', 'yfinance', 'cvxpy', 'SymPy']}
+                items={['Concurrency', 'Lock-free queues', 'Latency benchmarking', 'CMake', 'pandas', 'NumPy']}
               />
             </>
           )}
