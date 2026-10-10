@@ -76,7 +76,7 @@ export default function Contact({ sectionRef }) {
           {/* Left side: message */}
           <p className="flex items-center gap-2 mb-4 sm:mb-0 text-gray-500 dark:text-gray-300">
             <Code2 className="w-4 h-4 text-gray-500 dark:text-gray-300" />
-            Built with React and Tailwind CSS. © 2025 Sshubhan Kammari.
+            Built with React and Tailwind CSS. © {new Date().getFullYear()} Sshubhan Kammari.
           </p>
 
           {/* Right side: icons */}

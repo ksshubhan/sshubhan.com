@@ -6,11 +6,12 @@ import {
   FaCloud,
   FaCodeBranch,
   FaComments,
-  FaCogs,
   FaBullseye,
   FaCrown,
   FaSearch,
   FaLightbulb,
+  FaMicrochip,
+  FaChartLine,
 } from 'react-icons/fa';
 
 export default function Skills({ sectionRef }) {
@@ -88,16 +89,20 @@ export default function Skills({ sectionRef }) {
           {activeTab === 'technical' && (
             <>
               <SkillCard
-                title="Frontend Development"
+                title="Languages"
                 icon={<FaLaptopCode />}
-                items={['React', 'Next.js', 'JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3']}
+                items={['C++', 'Python', 'Rust', 'C', 'Java', 'Haskell', 'TypeScript', 'Solidity']}
               />
               <SkillCard
-                title="Backend Development"
-                icon={<FaCodeBranch />}
-                items={['Node.js', 'Python', 'Java', 'C#']}
+                title="Systems & Performance"
+                icon={<FaMicrochip />}
+                items={['C++20', 'Lock-free queues', 'Atomics', 'Concurrency', 'Latency benchmarking', 'CMake']}
               />
-              <SkillCard title="Database & Cloud" icon={<FaCloud />} items={['Azure']} />
+              <SkillCard
+                title="Quant & Data"
+                icon={<FaChartLine />}
+                items={['Backtesting', 'pandas', 'NumPy', 'yfinance', 'cvxpy', 'SymPy']}
+              />
             </>
           )}
 
@@ -138,9 +143,9 @@ export default function Skills({ sectionRef }) {
 
           {activeTab === 'tools' && (
             <>
-              <SkillCard title="Dev Tools" icon={<FaToolbox />} items={['VS Code', 'Git', 'GitHub']} />
-              <SkillCard title="Design Tools" icon={<FaLightbulb />} items={['Canva']} />
-              <SkillCard title="Testing & Deployment" icon={<FaCogs />} items={['Vercel']} />
+              <SkillCard title="Dev Tools" icon={<FaToolbox />} items={['Git', 'GitHub', 'CMake', 'VS Code', 'Docker', 'Linux / macOS']} />
+              <SkillCard title="Web & Backend" icon={<FaCodeBranch />} items={['React', 'FastAPI', 'Spring Boot', 'Postgres', 'Tailwind CSS', 'Vite']} />
+              <SkillCard title="Deployment" icon={<FaCloud />} items={['Vercel', 'Railway', 'Neon']} />
             </>
           )}
         </div>

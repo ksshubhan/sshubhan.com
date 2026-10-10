@@ -34,7 +34,7 @@ export default function About({ sectionRef }) {
               {
                 icon: <FaUserGraduate className="text-white text-3xl" />,
                 title: "Bio",
-                text: "Third-year Computer Science student at the University of Manchester. Passionate about full-stack development, fintech, and quantitative trading.",
+                text: "Third-year Computer Science student at the University of Manchester. I work on low-latency C++ systems and trading strategies, and I'm targeting Quant Developer roles.",
               },
               {
                 icon: <FaEnvelope className="text-white text-3xl" />,
@@ -64,7 +64,7 @@ export default function About({ sectionRef }) {
               {
                 icon: <FaGraduationCap className="text-white text-3xl" />,
                 title: "Education",
-                text: "BSc Computer Science @ University of Manchester (2024–2027). Focused on software development, algorithms, and financial technology.",
+                text: "BSc Computer Science @ University of Manchester (2024–2027). Focused on systems, algorithms, and concurrency.",
               }
              ].map(({ icon, title, text }, i) => (
               <div key={i} className="p-4 rounded-md hover:shadow-lg transition text-left">
