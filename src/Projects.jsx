@@ -57,7 +57,7 @@ export default function Projects({ sectionRef }) {
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl sm:text-5xl font-bold mb-2 pb-[0.4rem]">Featured Projects</h2>
         <p className="text-gray-600 dark:text-gray-400 mt-5 mb-8 text-base sm:text-[1.11rem]">
-          Systems and trading projects, with the code and write-ups on GitHub.
+          Here are some of my recent projects that showcase my skills and experience.
         </p>
 
         <div className="grid grid-cols-1 gap-10 mt-16">
