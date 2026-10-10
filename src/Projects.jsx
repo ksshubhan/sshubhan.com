@@ -10,12 +10,12 @@ const projectData = [
     code: 'https://github.com/ksshubhan/market-data-pipeline',
   },
   {
-    title: 'PRISM Trading Hackathon',
+    title: 'PRISM Trading Hackathon: 2nd Place Overall',
     description:
-      'Two-person team entry in a weekend hackathon where bots built US-equity portfolios for simulated clients through a live API, across five rounds of tightening rules. Strategies moved from a fixed high-throughput portfolio to volatility-ranked selection, cvxpy optimisers and a final diversified heuristic with a budget buffer.',
+      'Two-person team entry in the PRISM trading hackathon at StudentHack 2025, where bots built US-equity portfolios for simulated clients through a live API, across five rounds of tightening rules. Strategies moved from a fixed high-throughput portfolio to volatility-ranked selection, cvxpy optimisers and a final diversified heuristic with a budget buffer.',
     tags: ['Python', 'REST API', 'yfinance', 'cvxpy', 'pandas'],
-    image: '/prism-leaderboard.jpg',
-    imageAlt: 'PRISM round 1 leaderboard with team jt in first place',
+    image: '/prism-studenthack.jpg',
+    imageAlt: 'Sshubhan and teammate Julian at StudentHack 2025',
     code: 'https://github.com/ksshubhan/prism-trading-hackathon',
   },
   {

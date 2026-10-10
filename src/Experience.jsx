@@ -27,7 +27,7 @@ const experienceData = [
     icon: <FaTrophy className="text-black text-xl" />,
     badge: "Hackathon",
     title: "PRISM Trading Hackathon: 2nd place overall",
-    company: "Two-person team",
+    company: "StudentHack 2025 · two-person team",
     date: "April 2025",
     description:
       "Built Python bots that read a simulated client's budget, age and sector preferences from a live API and submitted a suitable US-equity portfolio, across five rounds of changing rules.",
