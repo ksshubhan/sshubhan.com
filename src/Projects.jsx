@@ -25,6 +25,8 @@ const projectData = [
     tags: ['Python', 'FastAPI', 'SymPy', 'React', 'TypeScript', 'Postgres'],
     image: '/exampaper-builder.jpg',
     imageAlt: 'ExamPaper paper builder: tier, paper type, length and topic selection',
+    imageFit: 'contain',
+    imageBg: 'bg-[#f3f4f6]',
     code: 'https://github.com/ksshubhan/exam-paper',
     demo: 'https://exampaper.sshubhan.com',
   },
@@ -68,7 +70,7 @@ function ProjectCard({ project }) {
             src={project.image}
             alt={project.imageAlt ?? project.title}
             className={`w-full h-full rounded-xl transition-transform duration-500 hover:scale-[1.03] ${
-              project.imageFit === 'contain' ? 'object-contain bg-white' : 'object-cover'
+              project.imageFit === 'contain' ? `object-contain ${project.imageBg ?? 'bg-white'}` : 'object-cover'
             }`}
           />
         </div>
