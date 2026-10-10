@@ -10,15 +10,6 @@ const projectData = [
     code: 'https://github.com/ksshubhan/market-data-pipeline',
   },
   {
-    title: 'PRISM Trading Hackathon: 2nd Place Overall',
-    description:
-      'Two-person team entry in the PRISM trading hackathon at StudentHack 2025, where bots built US-equity portfolios for simulated clients through a live API, across five rounds of tightening rules. Strategies moved from a fixed high-throughput portfolio to volatility-ranked selection, cvxpy optimisers and a final diversified heuristic with a budget buffer.',
-    tags: ['Python', 'REST API', 'yfinance', 'cvxpy', 'pandas'],
-    image: '/prism-studenthack.jpg',
-    imageAlt: 'Sshubhan and teammate Julian at StudentHack 2025',
-    code: 'https://github.com/ksshubhan/prism-trading-hackathon',
-  },
-  {
     title: 'ExamPaper',
     description:
       'A practice paper generator for GCSE and A-level subjects, starting with GCSE Maths: it produces original exam-style papers with mark schemes as print-ready PDFs. Questions come from deterministic, seeded builders, and every answer is derived and checked with SymPy before a question can ship. No model generates the content.',
@@ -27,6 +18,15 @@ const projectData = [
     imageAlt: 'ExamPaper paper builder: tier, paper type, length and topic selection',
     code: 'https://github.com/ksshubhan/exam-paper',
     demo: 'https://exampaper.sshubhan.com',
+  },
+  {
+    title: 'PRISM Trading Hackathon: 2nd Place Overall',
+    description:
+      'Two-person team entry in the PRISM trading hackathon at StudentHack 2025, where bots built US-equity portfolios for simulated clients through a live API, across five rounds of tightening rules. Strategies moved from a fixed high-throughput portfolio to volatility-ranked selection, cvxpy optimisers and a final diversified heuristic with a budget buffer.',
+    tags: ['Python', 'REST API', 'yfinance', 'cvxpy', 'pandas'],
+    image: '/prism-studenthack.jpg',
+    imageAlt: 'Sshubhan and teammate Julian at StudentHack 2025',
+    code: 'https://github.com/ksshubhan/prism-trading-hackathon',
   },
 ];
 
