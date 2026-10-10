@@ -13,8 +13,9 @@ const experienceData = [
     icon: <FaChalkboardTeacher className="text-black text-xl" />,
     badge: "Teaching",
     title: "GCSE & A-Level Tutor",
-    company: "Private tutoring",
+    company: "Edumentors",
     date: "Sep 2025 – Present",
+    location: "Remote",
     description:
       "Tutor GCSE Maths and AQA Biology, Chemistry and Physics, and A-level Maths, Further Maths, Physics and Computer Science, planning each student's sessions around the topics they're weakest in.",
     bullets: [

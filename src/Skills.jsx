@@ -90,7 +90,7 @@ export default function Skills({ sectionRef }) {
               <SkillCard
                 title="Languages"
                 icon={<FaLaptopCode />}
-                items={['C++', 'Python', 'Java', 'Rust', 'C', 'Haskell', 'TypeScript']}
+                items={['C++', 'Python', 'Java', 'Rust', 'C', 'Haskell', 'TypeScript', 'JavaScript', 'SQL', 'C#']}
               />
               <SkillCard
                 title="Software Engineering"
@@ -100,7 +100,7 @@ export default function Skills({ sectionRef }) {
               <SkillCard
                 title="Systems & Data"
                 icon={<FaMicrochip />}
-                items={['Concurrency', 'Lock-free queues', 'Latency benchmarking', 'CMake', 'pandas', 'NumPy']}
+                items={['Concurrency', 'Lock-free queues', 'C++ memory model', 'Cache behaviour', 'Latency benchmarking', 'CMake', 'pandas', 'NumPy', 'SymPy', 'Matplotlib']}
               />
             </>
           )}
@@ -142,8 +142,8 @@ export default function Skills({ sectionRef }) {
 
           {activeTab === 'tools' && (
             <>
-              <SkillCard title="Dev Tools" icon={<FaToolbox />} items={['Git', 'GitHub', 'CMake', 'VS Code', 'Docker', 'Linux / macOS']} />
-              <SkillCard title="Web & Backend" icon={<FaCodeBranch />} items={['React', 'FastAPI', 'Spring Boot', 'Postgres', 'Tailwind CSS', 'Vite']} />
+              <SkillCard title="Dev Tools" icon={<FaToolbox />} items={['Git', 'GitHub', 'CMake', 'Clang/LLVM', 'GCC', 'ThreadSanitizer', 'VS Code', 'Docker', 'Linux / macOS']} />
+              <SkillCard title="Web & Backend" icon={<FaCodeBranch />} items={['React', 'FastAPI', 'Flask', 'Spring Boot', 'Postgres', 'Playwright', 'Tailwind CSS', 'Vite']} />
               <SkillCard title="Deployment" icon={<FaCloud />} items={['Vercel', 'Railway', 'Neon']} />
             </>
           )}
