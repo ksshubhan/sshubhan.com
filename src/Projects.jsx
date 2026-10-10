@@ -21,7 +21,7 @@ const projectData = [
   {
     title: 'ExamPaper',
     description:
-      'Generates original GCSE Higher Maths practice papers with mark schemes as print-ready PDFs. Questions come from deterministic, seeded builders, and every answer is derived and checked with SymPy before a question can ship. No model generates the content.',
+      'A practice paper generator for GCSE and A-level subjects, starting with GCSE Maths: it produces original exam-style papers with mark schemes as print-ready PDFs. Questions come from deterministic, seeded builders, and every answer is derived and checked with SymPy before a question can ship. No model generates the content.',
     tags: ['Python', 'FastAPI', 'SymPy', 'React', 'TypeScript', 'Postgres'],
     image: '/exampaper-builder.jpg',
     imageAlt: 'ExamPaper paper builder: tier, paper type, length and topic selection',
