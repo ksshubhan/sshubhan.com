@@ -16,12 +16,11 @@ const experienceData = [
     company: "Private tutoring",
     date: "Sep 2025 – Present",
     description:
-      "Tutor GCSE and A-level students, planning each student's revision around the topics they're weakest in.",
+      "Tutor GCSE Maths, Biology, Chemistry and Physics (AQA), and A-level Maths, Further Maths, Physics and Computer Science, planning each student's sessions around the topics they're weakest in.",
     bullets: [
-      "GCSE: Maths and AQA Biology, Chemistry and Physics.",
-      "A-level: Maths, Further Maths, Physics and Computer Science.",
-      "Keep a red/amber/green topic tracker per student and subject to decide what each session covers.",
-      "Make revision resources matched to each student's gaps.",
+      "Completed 235+ tutoring sessions.",
+      "Helped a student pass GCSE Maths after three previous unsuccessful attempts.",
+      "Took a student from a grade 3 to a grade 7 in GCSE Computer Science.",
     ],
   },
   {
