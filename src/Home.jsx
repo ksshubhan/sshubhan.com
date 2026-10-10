@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from "react-icons/fa";
-import { Cpu, Code2, TrendingUp, Server, Braces } from "lucide-react";
+import { Globe, Code2, Database, Server, Braces } from "lucide-react";
 import { motion } from "framer-motion";
 import OrbitIcon from "./OrbitIcon";
 
@@ -56,10 +56,10 @@ export default function Home({ sectionRef }) {
           </h2>
 
           <p className="text-gray-500 dark:text-gray-400 mb-4">
-            I build low-latency systems in C++, most recently a wait-free ring buffer feeding a market data handler, measured down to the nanosecond.
+            I’m a developer passionate about blending creativity with code. I work on full-stack projects and am diving into the world of quantitative finance and algorithmic trading.
           </p>
           <p className="text-gray-500 dark:text-gray-400 mb-8">
-            Alongside the systems work I write trading strategies and backtests in Python, and I'm applying for Quant Developer graduate roles.
+            I love solving hard problems and building impactful tools. My goal is to make tech that’s both smart and scalable.
           </p>
 
           {/* Follow Me On */}
@@ -126,7 +126,7 @@ export default function Home({ sectionRef }) {
 
             {/* Orbit icons (same for all screens now, scaling handled in OrbitIcon.jsx) */}
             <OrbitIcon angle={150} radius={300} delay={0.00} duration={3.2} repeatDelay={0.2} float={7} bounceDelay={0.0}>
-              <Cpu className="w-5 h-5 sm:w-6 sm:h-6" />
+              <Globe className="w-5 h-5 sm:w-6 sm:h-6" />
             </OrbitIcon>
 
             <OrbitIcon angle={185} radius={290} delay={0.25} duration={6.8} repeatDelay={0.1} float={6} bounceDelay={0.4}>
@@ -134,7 +134,7 @@ export default function Home({ sectionRef }) {
             </OrbitIcon>
 
             <OrbitIcon angle={205} radius={260} delay={0.55} duration={3.51} repeatDelay={0.15} float={5} bounceDelay={0.8}>
-              <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6" />
+              <Database className="w-5 h-5 sm:w-6 sm:h-6" />
             </OrbitIcon>
 
             <OrbitIcon angle={20} radius={265} delay={0.35} duration={7.4} repeatDelay={0.05} float={8} bounceDelay={1.2}>
