@@ -25,8 +25,6 @@ const projectData = [
     tags: ['Python', 'FastAPI', 'SymPy', 'React', 'TypeScript', 'Postgres'],
     image: '/exampaper-builder.jpg',
     imageAlt: 'ExamPaper paper builder: tier, paper type, length and topic selection',
-    imageFit: 'contain',
-    imageBg: 'bg-[#f3f4f6]',
     code: 'https://github.com/ksshubhan/exam-paper',
     demo: 'https://exampaper.sshubhan.com',
   },
